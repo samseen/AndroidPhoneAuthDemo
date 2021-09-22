@@ -1,6 +1,5 @@
 package com.samseen.phoneauthdemo;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,19 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseException;
-import com.google.firebase.FirebaseTooManyRequestsException;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.PhoneAuthCredential;
-import com.google.firebase.auth.PhoneAuthOptions;
-import com.google.firebase.auth.PhoneAuthProvider;
-
-import java.util.concurrent.TimeUnit;
 
 public class ManageOTPActivity extends AppCompatActivity {
 
@@ -40,7 +28,7 @@ public class ManageOTPActivity extends AppCompatActivity {
         setContentView(R.layout.manage_otp_activity);
 
         t2 = findViewById(R.id.t2);
-        b2 = findViewById(R.id.b2);
+        b2 = findViewById(R.id.verify_code_button);
         phone_number = getIntent().getStringExtra("mobile").toString();
         auth = FirebaseAuth.getInstance();
 

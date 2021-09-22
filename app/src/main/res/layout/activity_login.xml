@@ -31,12 +31,14 @@
         android:inputType="phone"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toEndOf="@+id/input_country_code"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.604"
+        tools:text="8123456789" />
 
     <Button
         android:id="@+id/send_code_btn"
